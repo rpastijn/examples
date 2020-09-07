@@ -65,6 +65,6 @@
             "description":"Setup xrdp on OL7",
             "publisheddate": "05/01/2020",
             "filename":"./md-files/iaas-xrdp.md"
-        },
-    ]
+        }
+ ]
 }
