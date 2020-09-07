@@ -1,6 +1,3 @@
-![](img/Header.jpg)
----
-
 # Make JSON data look like an Oracle table #
 
 After the introduction of XML, which Oracle still supports as native type, the focus is currently on JSON. For some programs and functions it is sometimes easier to translate the JSON values into something similar as an Oracle database. This way we can select and join just like a regular table.

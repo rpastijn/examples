@@ -1,6 +1,3 @@
-![](img/Header.jpg)
----
-
 # Create .ics integration with your calendar data #
 Having a database with interesting information like dates can be more useful if the data would be available on other devices as well. In this lab we will demonstrate how easy it is to export calendar information from Oracle Autonomous Database to devices and applications like your phone, Thunderbird/Lightning or other calendaring apps. The most often used and supported standard is the iCalendar standard (RFC5545 as [described here](https://tools.ietf.org/html/rfc5545)). This is a plain text file available over the network which can be imported (one-off) or subscribed to by applications.
 

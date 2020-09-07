@@ -1,6 +1,3 @@
-![](img/Header.jpg)
----
-
 # Make Siri interact with Autonomous Database (iPhone owners only) #
 Having a database with interesting information can be more useful if the data would be available on other devices as well. In this lab we will demonstrate how easy it is link information from the database and make it available to assistants like Apple's Siri. In Oracle Autonomous Database, we can leverage the installed APEX environment. One of the default options in Autonomous Database is the enabled ORDS interface. Using this interface, we can create our own APIs to, for example, to receive information from Siri and send a response back.
 

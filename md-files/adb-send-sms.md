@@ -1,6 +1,3 @@
-![](img/Header.jpg)
----
-
 # Send an SMS from Autonomous Database #
 In Oracle Autonomous Database, we can leverage the installed APEX environment. Besides a low code development environment, Oracle APEX also supplies a list of PL/SQL packages that can be used outside of the APEX environment.
 
