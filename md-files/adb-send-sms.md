@@ -64,7 +64,7 @@ Enter the following code in your worksheet.
       send_sms ( p_sender      => 'OGH',
                  p_phonenumber => <your mobile number>,
                  p_message     => '<your message>',
-                 p_accesskey   => 'OKhvuouIB7gN2kBMUZ8XBPjmP' );
+                 p_accesskey   => 'Your key like OKhvussIB7gNNkBMUZ8XBPxxY' );
     end;
 
  Execute the code as a script in your worksheet. Output similar to the below should be displayed:
@@ -96,12 +96,6 @@ Change the code in your worksheet replacing the test 'Access Key' for a live one
     PL/SQL procedure successfully completed.
 
 Check your phone !
-
-![](img/iPhone_001.jpg)
-
-More details ?
-
-![](img/iPhone_002.jpg)
 
 ## End-of-Labs
 
