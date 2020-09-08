@@ -7,7 +7,7 @@ Sending of SMS messages (or other messages like Slack, Whatsapp, MatterMost, Dis
 
 > **Note 1:** Oracle does not own the Messagebird service nor (specifically) promotes or endorses it.
 
-> **Note 2:** The author of this lab **personally** pays for sending messages through the SMS service, he cannot expense this anywhere. Please only send a single SMS for testing.
+> **Note 2:** You need to create an account with the example message provider for this lab to work. Please check the [Messagebird website](https://www.messagebird.com/). Or you can use any other message provider (but you may have to change the PL/SQL code in order to do this.
 
 ## Prerequisites ##
 
@@ -15,9 +15,7 @@ Sending of SMS messages (or other messages like Slack, Whatsapp, MatterMost, Dis
 - SQL Developer connection setup to connect to the instance
 - Worksheet active and connected in SQL Developer
 	- So you can execute statements and commands
-- Authentication key for the service
-
-> **Hint:** Most of the details needed for this lab are in this online manual. The final step, the authentication key, is not as it would allow everyone with access to this lab to send messages. Please ask the Oracle staff for the exact location of this key.
+- Authentication key for the service (available after account creation)
 
 ## Create a procedure that sends an SMS ##
 
