@@ -8,7 +8,7 @@ This example will show step-by-step how to setup the Oracle database for storage
    - Generated Access Key ID and Secret Access Key
 - Oracle database 19c and up
 
-## 1 - Install OSB Cloud Module ##
+## Istall OSB Cloud Module ##
 
 For the setup we need an Oracle wallet that contains the Amazon Access Key ID and Secret Access Key. We also need the library (```libosbws.so```) for connecting to the S3 storage. We could leverage any existing library and/or manually generate the Oracle wallet but it is easier to have Oracle generate the required items. This also means we will have the latest version and we can update the items without updating our Oracle Home.
 
@@ -136,7 +136,7 @@ When you login to your Amazon S3 storage, you will see that the library has crea
 
 This means we can now continue setting up the Oracle environment.
 
-## 2 - Setup Oracle DBFS Hybrid Storage on S3 ##
+## Setup Oracle DBFS Hybrid Storage on S3 ##
 
 For this example, we will use the original example from the documentation but split it out into sections to explain what is happening. The original example can be found in the Oracle documentation: https://docs.oracle.com/en/database/oracle/oracle-database/21/adlob/using-hierarchical-store.html#GUID-EE3C969D-C6DE-49B5-8694-1AF22E143E4D
 
@@ -328,7 +328,7 @@ PL/SQL procedure successfully completed.
 
 We have now succesfully setup a Hybrid Storage store on Amazon S3.
 
-## Query the created table by the setup ##
+### Query the created table by the setup ###
 
 In the beginning we set the table name for the store to be 's3_table'. We can now describe and query the table:
 
@@ -466,7 +466,7 @@ end;
 </copy>
 ```
 
-## Flushing the cache to the S3 store ##
+### Flushing the cache to the S3 store ###
 
 To force the system to flush the cache to the S3 object store, you can execute the following command:
 
@@ -528,7 +528,7 @@ PATHNAME            ITEM
 
 End of Lab
 
-### Work Arounds to get this to work ###
+## Work Arounds to get this to work ##
 
 - Set the opt_tarball_size to 5242880
 	- If you dont do this, the following error
