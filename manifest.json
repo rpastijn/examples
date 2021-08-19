@@ -1,70 +1,38 @@
 {
+    "workshoptitle": "Upgrade to Oracle 19c",
+    "help": "livelabs-help-database_us@oracle.com",
     "tutorials": [
         {
-            "title": "Welcome",
-            "description":"Welcome to my repo",
-            "publisheddate": "01/15/2020",
-            "filename":"./md-files/welcome.md"
+            "title": "Introduction",
+            "description": "Introduction to the Upgrade to Oracle 19c Hands-On Lab instructions.",
+            "filename": "../../introduction/introduction.md"
         },
         {
-            "title": "DBMS_CLOUD in ADB",
-            "description":"DBMS_CLOUD in ADB",
-            "publisheddate": "01/15/2020",
-            "filename":"./md-files/adb-dbms-cloud-rest.md"
+            "title": "Lab 0: Verify the environment",
+            "description": "Check that the supplied LiveLab environment has been setup and is running",
+            "filename": "../../verify-the-environment/verify-the-environment.md"
         },
         {
-            "title": "Generate .ICS from ADB",
-            "description":"Generate .ICS from ADB",
-            "publisheddate": "08/27/2020",
-            "filename":"./md-files/adb-ics-integration.md"
+            "title": "Lab 1: Install the 19c Oracle Home",
+            "description": "Install the 19c tree that is needed for all of the following Labs",
+            "filename": "../../install-19c-oh/install-19c-oh.md"
         },
         {
-            "title": "Send SMS from ADB",
-            "description":"Send SMS from ADB",
-            "publisheddate": "04/15/2020",
-            "filename":"./md-files/adb-send-sms.md"
+            "title": "Lab 2: Auto Upgrade",
+            "filename": "../../autoupgrade/autoupgrade.md"
         },
         {
-            "title": "Make Siri work on ADB",
-            "description":"Make Siri work on ADB",
-            "publisheddate": "04/20/2020",
-            "filename":"./md-files/adb-siri-integration.md"
+            "title": "Lab 3: Full Transportable",
+            "filename": "../../full-transportable/full-transportable.md"
         },
         {
-            "title": "Send email from DBaaS",
-            "description":"Send email from DBaaS",
-            "publisheddate": "03/20/2020",
-            "filename":"./md-files/dbaas-email.md"
+            "title": "Lab 4: Pluggable database",
+            "filename": "../../pluggable-db/pluggable-db.md"
         },
         {
-            "title": "Use external SMTP on OCI",
-            "description":"Use external SMTP on OCI",
-            "publisheddate": "04/29/2020",
-            "filename":"./md-files/dbaas-external-smtp.md"
-        },
-        {
-            "title": "Database Application Containers",
-            "description":"Database Application Containers",
-            "publisheddate": "05/01/2020",
-            "filename":"./md-files/db-application-containers.md"
-        },
-        {
-            "title": "Change your spfile using CLI",
-            "description":"Change your spfile using CLI",
-            "publisheddate": "05/04/2020",
-            "filename":"./md-files/db-change-spfile.md"
-        },
-        {
-            "title": "JSON like database table",
-            "description":"JSON like database table",
-            "publisheddate": "05/14/2020",
-            "filename":"./md-files/db-json-like-table.md"
-        },
-        {
-            "title": "Setup xrdp on OL7",
-            "description":"Setup xrdp on OL7",
-            "publisheddate": "05/01/2020",
-            "filename":"./md-files/iaas-xrdp.md"
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
         }
- ]
+    ]
 }
