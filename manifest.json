@@ -1,38 +1,53 @@
 {
-    "workshoptitle": "Upgrade to Oracle 19c",
-    "help": "livelabs-help-database_us@oracle.com",
+    "workshoptitle": "Roberts database Examples",
     "tutorials": [
         {
-            "title": "Introduction",
-            "description": "Introduction to the Upgrade to Oracle 19c Hands-On Lab instructions.",
-            "filename": "../../introduction/introduction.md"
+            "title": "Welcome",
+            "filename": "../md-files/welcome.md"
         },
         {
-            "title": "Lab 0: Verify the environment",
-            "description": "Check that the supplied LiveLab environment has been setup and is running",
-            "filename": "../../verify-the-environment/verify-the-environment.md"
+            "title": "DBMS_CLOUD in ADB",
+            "filename": "../md-files/adb-dbms-cloud-rest.md"
         },
         {
-            "title": "Lab 1: Install the 19c Oracle Home",
-            "description": "Install the 19c tree that is needed for all of the following Labs",
-            "filename": "../../install-19c-oh/install-19c-oh.md"
+            "title": "Generate .ICS from ADB",
+            "filename": "../md-files/adb-ics-integration.md"
         },
         {
-            "title": "Lab 2: Auto Upgrade",
-            "filename": "../../autoupgrade/autoupgrade.md"
+            "title": "Send SMS from ADB",
+            "filename": "../md-files/adb-send-sms.md"
         },
         {
-            "title": "Lab 3: Full Transportable",
-            "filename": "../../full-transportable/full-transportable.md"
+            "title": "Make SIRI work with ADB",
+            "filename": "../md-files/adb-siri-integration.md"
         },
         {
-            "title": "Lab 4: Pluggable database",
-            "filename": "../../pluggable-db/pluggable-db.md"
+            "title": "Send email from DBaaS",
+            "filename": "../md-files/dbaas-email.md"
         },
         {
-            "title": "Need Help?",
-            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-            "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
+            "title": "Use external SMTP on OCI",
+            "filename": "../md-files/dbaas-external-smtp.md"
+        },
+        {
+            "title": "Database Application Containers",
+            "filename": "../md-files/db-application-containers.md"
+        },
+        {
+            "title": "Change spfile using CLI",
+            "filename": "../md-files/db-change-spfile.md"
+        },
+        {
+            "title": "Query JSON like a table",
+            "filename": "../md-files/db-json-like-table.md"
+        },
+        {
+            "title": "Setup XRDP on OL7",
+            "filename": "../md-files/iaas-xrdp.md"
+        },
+        {
+            "title": "Setup DBMS_DBFS_HS for S3",
+            "filename": "../md-files/dbms-dbfs-hs-on-S3.md"
         }
     ]
 }
