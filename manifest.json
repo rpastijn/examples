@@ -3,51 +3,64 @@
     "tutorials": [
         {
             "title": "Welcome",
+            "description": "Welcome",
             "filename": "../md-files/welcome.md"
         },
         {
             "title": "DBMS_CLOUD in ADB",
+            "description": "DBMS_CLOUD in ADB",
             "filename": "../md-files/adb-dbms-cloud-rest.md"
         },
         {
             "title": "Generate .ICS from ADB",
+            "description": "Generate .ICS from ADB",
             "filename": "../md-files/adb-ics-integration.md"
         },
         {
             "title": "Send SMS from ADB",
+            "description": "Send SMS from ADB",
             "filename": "../md-files/adb-send-sms.md"
         },
         {
             "title": "Make SIRI work with ADB",
+            "description": "Make SIRI work with ADB",
             "filename": "../md-files/adb-siri-integration.md"
         },
         {
             "title": "Send email from DBaaS",
+            "description": "Email from DBaaS",
             "filename": "../md-files/dbaas-email.md"
         },
         {
             "title": "Use external SMTP on OCI",
+            "description": "External SMTP on OCI",
             "filename": "../md-files/dbaas-external-smtp.md"
         },
         {
             "title": "Database Application Containers",
+            "description": "Application Containers",
             "filename": "../md-files/db-application-containers.md"
         },
         {
             "title": "Change spfile using CLI",
+            "description": "Change spfile using CLI",
             "filename": "../md-files/db-change-spfile.md"
         },
         {
             "title": "Query JSON like a table",
+            "description": "Query JSON as a table",
             "filename": "../md-files/db-json-like-table.md"
         },
         {
             "title": "Setup XRDP on OL7",
+            "description": "Setup XRDP on OL7",
             "filename": "../md-files/iaas-xrdp.md"
         },
         {
             "title": "Setup DBMS_DBFS_HS for S3",
+            "description": "Setup DBMS_DBFS_HS for S3",
             "filename": "../md-files/dbms-dbfs-hs-on-S3.md"
         }
     ]
+
 }
