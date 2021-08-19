@@ -8,7 +8,7 @@ This example will show step-by-step how to setup the Oracle database for storage
    - Generated Access Key ID and Secret Access Key
 - Oracle database 19c and up
 
-## Istall OSB Cloud Module ##
+## Install OSB Cloud Module ##
 
 For the setup we need an Oracle wallet that contains the Amazon Access Key ID and Secret Access Key. We also need the library (```libosbws.so```) for connecting to the S3 storage. We could leverage any existing library and/or manually generate the Oracle wallet but it is easier to have Oracle generate the required items. This also means we will have the latest version and we can update the items without updating our Oracle Home.
 
