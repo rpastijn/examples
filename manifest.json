@@ -62,6 +62,11 @@
             "description": "Setup DBMS_DBFS_HS for S3",
             "filename": "./md-files/dbms-dbfs-hs-on-S3.md"
         }
+        {
+            "title": "Select AI NLOUG",
+            "description": "Playing with Select AI for NLOUG",
+            "filename": "./md-files/NLOUG-SELECTAI.md"
+        }
     ]
 
 }
