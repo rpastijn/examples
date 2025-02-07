@@ -517,7 +517,52 @@ end;
 /
 </copy>
 ```
+
+### RDW
+
+-- Create profile
+
+```
+<copy>
+begin
+  DBMS_CLOUD_AI.CREATE_PROFILE (
+     profile_name => 'OCI_DEMO_RDW',
+     attributes   => '{"provider": "oci",
+                       "credential_name": "OCI_CREDENTIAL",
+                       "object_list": [{"owner" : "DEMO"},
+                                       {"name": "RDW"}],
+                       "region": "eu-frankfurt-1",
+                       "comments": "true",
+                       "conversation": "true"
+                        }');
+end;
+/
+```
+
+-- Switch to the new profile with OCI
+
+```
+<copy>
+exec DBMS_CLOUD_AI.SET_PROFILE('OCI_DEMO_RDW');
+</copy>
+```
+-- Check if the table is understood
+
+```
+<copy>
+select ai how many volvo cars are driving around;
+select ai showsql how many volvo cars are driving around;
+</copy>
+```
+
+```
+select ai how many volvo cars were allowed on the road in 2023;
+select ai showsql how many volvo cars were allowed on the road in 2023;
+</copy>
+```
+
 ### Cleanup
+
 
 ```
 <copy>
@@ -550,3 +595,7 @@ end;
 ```
   
   
+## Fun!
+
+SQL Error: ORA-20400: Request failed with status HTTP 400 - https://inference.generativeai.eu-frankfurt-1.oci.oraclecloud.com/20231130/actions/chat
+Error response - { "code": "400", "message": "Inappropriate content detected in output blocklist" }

@@ -146,7 +146,7 @@ Now that we have correlated the Autonomous Database to a Dynamic Group, we can w
 - Copy and paste the following new policy line
 
 ````
-allow dynamic-group [dynamic group name] to manage autonomous-databases in compartment [your compartment]
+allow dynamic-group [domain]/[dynamic group name] to manage autonomous-databases in compartment [your compartment]
 ````
 
 In this example, we grant the right to manage all autonomous databases in the compartment to the Autonomous Database Instance. In production, add or remove rights in the policy file as needed according to the documentation on policy options.
@@ -173,6 +173,7 @@ If another user than the ADMIN user will execute the commands, an additional com
 EXEC DBMS_CLOUD_ADMIN.ENABLE_RESOURCE_PRINCIPAL(username => '[your db user]');
 ```
 
+
 After executing the first (and optionally the second) command, you are ready to start sending REST API calls to the OCI cloud.
 
 ## Initial test to retrieve information ##
@@ -194,7 +195,7 @@ https://docs.cloud.oracle.com/en-us/iaas/api/#/en/database/20160918/AutonomousDa
   v_compartment  varchar2(200) := '[your tenancy OCID or compartment OCID]';
   v_credential   varchar2(200) := 'OCI_CRED'; -- or OCI$RESOURCE_PRINCIPAL
 begin
-  v_url := 'https://'||v_region||'/20160918/autonomousDatabases/?compartmentId='||v_compartment;
+  v_url := 'https://database.'||v_region||'.oraclecloud.com/20160918/autonomousDatabases/?compartmentId='||v_compartment;
   v_response := DBMS_CLOUD.SEND_REQUEST( 
        credential_name => v_credential,
        uri => v_url,
