@@ -1,12 +1,12 @@
 # Accessing OCI REST API from PL/SQL / APEX in ADB #
 
-Oracle Autonomous Database now has the DBMS_CLOUD package enhanced to send REST-API requests to the Oracle database. Combining this new functionality with the existing JSON functionality allows us to leverage PL/SQL to manage and Oracle OCI environment.
+Oracle Autonomous AI Database now has the DBMS_CLOUD package enhanced to send REST-API requests to the Oracle database. Combining this new functionality with the existing JSON functionality allows us to leverage PL/SQL to manage and Oracle OCI environment.
 
-https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/dbms-cloud-rest.html#GUID-19B1639E-68E2-45BB-802C-817ABD0DBE88
+https://docs.public.content.oci.oraclecloud.com/en-us/iaas/autonomous-database-serverless/doc/dbms-cloud-package.html
 
 ## Prerequisites ##
 
-This functionality can be used in both the Oracle paid and Oracle Free ADB environment.
+This functionality can be used in both the Oracle paid and Oracle Free ADB environment, for version 19c and up.
 
 The following needs to be available:
 
