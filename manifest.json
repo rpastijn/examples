@@ -8,6 +8,11 @@
             "filename": "./md-files/welcome.md"
         },
         {
+            "title": "Kerberos with Autonomous",
+            "description": "Kerberos and Autonomous",
+            "filename": "./md-files/oci-ad-kerberos-autonomous-database-step-by-step-guide.md"
+        },
+        {
             "title": "DBMS_CLOUD in ADB",
             "description": "DBMS_CLOUD in ADB",
             "filename": "./md-files/adb-dbms-cloud-rest.md"
