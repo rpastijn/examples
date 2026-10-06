@@ -398,9 +398,38 @@ Add-Computer `
 
 Sign in interactively as the domain test user. Do not use a local Windows account for the final Kerberos test.
 
-### 7.2 Install the full 19.3 base client
+### 7.2 Install the full Oracle client
 
-Obtain the full client ZIP from the approved software source. The example below uses a placeholder URL; do not store a PAR URL or password in this guide.
+#### 7.2.1 Option 1 - Download a pre-prepared Windows client version 19.14 or up
+
+Obtain the full 19c client ZIP that has been patched for version 19.14 or higher and turned into a gold image. This file is not available from the regular Oracle sites, you can only download the 19.3 client and patch it using the full DBRU patch and latest OPatch (downloadable from the Oracle Support site). The example below uses a placeholder URL, replace this by your own URL or PAR URL..
+
+Run in an elevated PowerShell session on WIN-Client:
+
+```powershell
+<copy>New-Item -ItemType Directory -Force -Path 'C:\Temp','C:\oracle' | Out-Null
+
+Invoke-WebRequest `
+  -Uri '<FULL_19c_CLIENT_PACKAGE_URL>' `
+  -OutFile 'C:\Temp\WINDOWS.X64_19c_client_home.zip'
+
+Expand-Archive `
+  -Path 'C:\Temp\WINDOWS.X64_19c_client_home.zip' `
+  -DestinationPath 'C:\oracle\client19home' `
+  -Force
+
+Test-Path 'C:\oracle\client19home\bin\sqlplus.exe'
+Test-Path 'C:\oracle\client19home\bin\okinit.exe'
+Test-Path 'C:\oracle\client19home\bin\oklist.exe'
+</copy>
+```
+> My 19.32 zipfile is stored here: https://objectstorage.eu-amsterdam-1.oraclecloud.com/p/ZMHzxPsENyzgWuPRpnDyP50dHxT9z1GYARabxAX3rUu95vmOS3EQ7ch8ho05f6v5/n/oraclepartnersas/b/LDAP-AI-BUCKET/o/WIN64_client_home_19.32_unofficial.zip
+
+If the download and unzip was successful, skip the next chapter.
+
+#### 7.2.2 Option 2 - Download the zipfiles from eDelivery and Oracle Support
+
+Obtain the full 19.3 client ZIP from the approved software source. The example below uses a placeholder URL, replace this by your own URL or PAR URL..
 
 Run in an elevated PowerShell session on WIN-Client:
 
@@ -420,13 +449,13 @@ Test-Path 'C:\oracle\client19home\bin\sqlplus.exe'
 Test-Path 'C:\oracle\client19home\bin\okinit.exe'
 Test-Path 'C:\oracle\client19home\bin\oklist.exe'
 </copy>
-``` 
+```
 
 > 19.3 client URL I used was https://objectstorage.eu-amsterdam-1.oraclecloud.com/p/JDDgmK1s20OBKTUxyhtLK5p1LF-puL8B7oTMEn1ZYCoSxwUMrppHiZ_YQnCVnjlQ/n/oraclepartnersas/b/LDAP-AI-BUCKET/o/WINDOWS.X64_193000_client_home.zip
 
 All three checks must return `True`. Do not continue with an Instant Client package or a package that lacks the full-client Kerberos utilities.
 
-### 7.3 Patch the client to 19.14 or later
+##### 7.2.2.1 Patch the client to 19.14 or later
 
 In order to be able to patch the client, it needs to have an Oracle Inventory. Login as opc on the WIN-Client system and run the `setup.bat` file from the unzipped Oracle Home location
 
@@ -497,6 +526,7 @@ Set-Location 'C:\oracle\client19cPatch\39418910'
 & "$env:ORACLE_HOME\bin\sqlplus.exe" -V
 </copy>
 ```
+### 7.2.3 Check the correct SQL\*Plus version before continuing
 
 The SQL\*Plus version must report 19.14 or later. If it still reports 19.3, stop and correct the patching process before continuing.
 
